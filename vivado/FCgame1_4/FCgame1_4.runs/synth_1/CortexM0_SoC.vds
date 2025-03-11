@@ -1,0 +1,692 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jun  2 21:16:56 2022
+# Process ID: 14612
+# Current directory: G:/game_yjx/FcGame1.5/vivado/FCgame1_4/FCgame1_4.runs/synth_1
+# Command line: vivado.exe -log CortexM0_SoC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CortexM0_SoC.tcl
+# Log file: G:/game_yjx/FcGame1.5/vivado/FCgame1_4/FCgame1_4.runs/synth_1/CortexM0_SoC.vds
+# Journal file: G:/game_yjx/FcGame1.5/vivado/FCgame1_4/FCgame1_4.runs/synth_1\vivado.jou
+# Running On: GAODERUI, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 8387 MB
+#-----------------------------------------------------------
+source CortexM0_SoC.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental G:/game_yjx/FcGame1.4/vivado/FCgame1_4/FCgame1_4.srcs/utils_1/imports/synth_1/CortexM0_SoC.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from G:/game_yjx/FcGame1.4/vivado/FCgame1_4/FCgame1_4.srcs/utils_1/imports/synth_1/CortexM0_SoC.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CortexM0_SoC -part xc7a35tftg256-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tftg256-2
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3796
+WARNING: [Synth 8-2611] redeclaration of ansi port position_finish is not allowed [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:235]
+WARNING: [Synth 8-992] key_interrupt is already implicitly declared earlier [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:54]
+WARNING: [Synth 8-992] cpuresetn is already implicitly declared earlier [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:86]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1275.926 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CortexM0_SoC' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:2]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [G:/game_yjx/FcGame1.5/rtl/keyboard.v:1]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_scan' [G:/game_yjx/FcGame1.5/rtl/keyboard_scan.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_scan' (1#1) [G:/game_yjx/FcGame1.5/rtl/keyboard_scan.v:1]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_filter' [G:/game_yjx/FcGame1.5/rtl/keyboard_filter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_filter' (2#1) [G:/game_yjx/FcGame1.5/rtl/keyboard_filter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (3#1) [G:/game_yjx/FcGame1.5/rtl/keyboard.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cortexm0ds_logic' [G:/game_yjx/FcGame1.5/rtl/cortexm0ds_logic.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'cortexm0ds_logic' (4#1) [G:/game_yjx/FcGame1.5/rtl/cortexm0ds_logic.v:27]
+WARNING: [Synth 8-7071] port 'CODENSEQ' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'CODEHINTDE' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'SPECHTRANS' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'TDO' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'nTDOEN' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'DBGRESTARTED' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'HALTED' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'TXEV' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'LOCKUP' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'GATEHCLK' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'SLEEPING' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'SLEEPDEEP' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'WAKEUP' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'WICSENSE' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'SLEEPHOLDACKn' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'WICENACK' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r0_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r1_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r2_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r3_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r4_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r5_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r6_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r7_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r8_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r9_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r10_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r11_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r12_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_r14_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_msp_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_psp_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_pc_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_apsr_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_tbit_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_ipsr_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_control_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7071] port 'vis_primask_o' of module 'cortexm0ds_logic' is unconnected for instance 'u_logic' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+WARNING: [Synth 8-7023] instance 'u_logic' of module 'cortexm0ds_logic' has 79 connections declared, but only 41 given [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:107]
+INFO: [Synth 8-6157] synthesizing module 'AHBlite_Interconnect' [G:/game_yjx/FcGame1.5/rtl/AHBlite_Interconnect.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AHBlite_Decoder' [G:/game_yjx/FcGame1.5/rtl/AHBlite_Decoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AHBlite_Decoder' (5#1) [G:/game_yjx/FcGame1.5/rtl/AHBlite_Decoder.v:1]
+WARNING: [Synth 8-7071] port 'P4_HSEL' of module 'AHBlite_Decoder' is unconnected for instance 'Decoder' [G:/game_yjx/FcGame1.5/rtl/AHBlite_Interconnect.v:142]
+WARNING: [Synth 8-7023] instance 'Decoder' of module 'AHBlite_Decoder' has 6 connections declared, but only 5 given [G:/game_yjx/FcGame1.5/rtl/AHBlite_Interconnect.v:142]
+INFO: [Synth 8-6157] synthesizing module 'AHBlite_SlaveMUX' [G:/game_yjx/FcGame1.5/rtl/AHBlite_SlaveMUX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AHBlite_SlaveMUX' (6#1) [G:/game_yjx/FcGame1.5/rtl/AHBlite_SlaveMUX.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AHBlite_Interconnect' (7#1) [G:/game_yjx/FcGame1.5/rtl/AHBlite_Interconnect.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AHBlite_Block_RAM' [G:/game_yjx/FcGame1.5/rtl/AHBlite_Block_RAM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AHBlite_Block_RAM' (8#1) [G:/game_yjx/FcGame1.5/rtl/AHBlite_Block_RAM.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'HRESP' does not match port width (2) of module 'AHBlite_Block_RAM' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:331]
+INFO: [Synth 8-6157] synthesizing module 'AHBlite_USER' [G:/game_yjx/FcGame1.5/rtl/AHBlite_WaterLight.v:1]
+WARNING: [Synth 8-3848] Net HRDATA in module/entity AHBlite_USER does not have driver. [G:/game_yjx/FcGame1.5/rtl/AHBlite_WaterLight.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'AHBlite_USER' (9#1) [G:/game_yjx/FcGame1.5/rtl/AHBlite_WaterLight.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'HRESP' does not match port width (2) of module 'AHBlite_Block_RAM' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:396]
+INFO: [Synth 8-6157] synthesizing module 'Block_RAM' [G:/game_yjx/FcGame1.5/rtl/Block_RAM.v:1]
+INFO: [Synth 8-3876] $readmem data file 'G:/game_yjx/FcGame1.5/keil/code11.hex' is read successfully [G:/game_yjx/FcGame1.5/rtl/Block_RAM.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'Block_RAM' (10#1) [G:/game_yjx/FcGame1.5/rtl/Block_RAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LED_Crtl' [G:/game_yjx/FcGame1.5/rtl/LED_Crtl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Crtl' (11#1) [G:/game_yjx/FcGame1.5/rtl/LED_Crtl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DLED_Crtl' [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DLED_Decoder' [G:/game_yjx/FcGame1.5/rtl/DLED_Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DLED_Decoder' (12#1) [G:/game_yjx/FcGame1.5/rtl/DLED_Decoder.v:23]
+WARNING: [Synth 8-567] referenced signal 'rstn' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:101]
+WARNING: [Synth 8-567] referenced signal 'reg_led1' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:101]
+WARNING: [Synth 8-567] referenced signal 'reg_led2' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:101]
+WARNING: [Synth 8-567] referenced signal 'reg_led3' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:101]
+WARNING: [Synth 8-567] referenced signal 'reg_led4' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:101]
+WARNING: [Synth 8-567] referenced signal 'reg_led5' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:101]
+WARNING: [Synth 8-567] referenced signal 'reg_led6' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'DLED_Crtl' (13#1) [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'buzzermusic' [G:/game_yjx/FcGame1.5/rtl/MUSIC/buzzermusic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bzmusic_ctrl' [G:/game_yjx/FcGame1.5/rtl/MUSIC/bzmusic_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bzmusic_ctrl' (14#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/bzmusic_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'addr_cnt' [G:/game_yjx/FcGame1.5/rtl/MUSIC/addr_cnt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register' [G:/game_yjx/FcGame1.5/rtl/MUSIC/register.v:1]
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (15#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/register.v:1]
+WARNING: [Synth 8-7137] Register addr_end_reg in module addr_cnt has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/game_yjx/FcGame1.5/rtl/MUSIC/addr_cnt.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'addr_cnt' (16#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/addr_cnt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BlockROM2' [G:/game_yjx/FcGame1.5/rtl/MUSIC/BlockROM.v:1]
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'F:/vivado_assignments/wholemusic.txt' is read successfully [G:/game_yjx/FcGame1.5/rtl/MUSIC/BlockROM.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'BlockROM2' (17#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/BlockROM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tune_decoder' [G:/game_yjx/FcGame1.5/rtl/MUSIC/tune_decoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tune_decoder' (18#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/tune_decoder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'tune_pwm' [G:/game_yjx/FcGame1.5/rtl/MUSIC/tune_pwm.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized0' [G:/game_yjx/FcGame1.5/rtl/MUSIC/register.v:1]
+	Parameter WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized0' (18#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'tune_pwm' (19#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/tune_pwm.v:1]
+INFO: [Synth 8-6157] synthesizing module 'beat_decoder' [G:/game_yjx/FcGame1.5/rtl/MUSIC/beat_decoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'beat_decoder' (20#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/beat_decoder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'beat_cnt' [G:/game_yjx/FcGame1.5/rtl/MUSIC/beat_cnt.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register__parameterized1' [G:/game_yjx/FcGame1.5/rtl/MUSIC/register.v:1]
+	Parameter WIDTH bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register__parameterized1' (20#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/register.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'beat_cnt' (21#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/beat_cnt.v:1]
+WARNING: [Synth 8-7137] Register ctrl_en_reg in module buzzermusic has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/game_yjx/FcGame1.5/rtl/MUSIC/buzzermusic.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'buzzermusic' (22#1) [G:/game_yjx/FcGame1.5/rtl/MUSIC/buzzermusic.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LCD_Crtl' [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_Crtl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LCDtopHARDWARE' [G:/game_yjx/FcGame1.5/rtl/LCD/LCDtopHARDWARE.v:24]
+INFO: [Synth 8-6157] synthesizing module 'LCD_RUN' [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:1]
+WARNING: [Synth 8-567] referenced signal 'x_position_start' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:37]
+WARNING: [Synth 8-567] referenced signal 'y_position_start' should be on the sensitivity list [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:37]
+INFO: [Synth 8-6157] synthesizing module 'WriteCtrl_RUN' [G:/game_yjx/FcGame1.5/rtl/LCD/WriteCtrl_RUN.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'WriteCtrl_RUN' (23#1) [G:/game_yjx/FcGame1.5/rtl/LCD/WriteCtrl_RUN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AddrIni_RUN' [G:/game_yjx/FcGame1.5/rtl/LCD/AddrIni_RUN.v:1]
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+WARNING: [Synth 8-7137] Register cnt_reg in module AddrIni_RUN has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/game_yjx/FcGame1.5/rtl/LCD/AddrIni_RUN.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'AddrIni_RUN' (24#1) [G:/game_yjx/FcGame1.5/rtl/LCD/AddrIni_RUN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BlockROM17' [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM17.v:1]
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'G:/game_yjx/FcGame1.5/rtl/data1.txt' is read successfully [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM17.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'BlockROM17' (25#1) [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM17.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SET_position' [G:/game_yjx/FcGame1.5/rtl/LCD/SET_position.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SET_position' (26#1) [G:/game_yjx/FcGame1.5/rtl/LCD/SET_position.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_RUN' (27#1) [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LCD_INI' [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_INI.v:1]
+INFO: [Synth 8-6157] synthesizing module 'WriteCtrl' [G:/game_yjx/FcGame1.5/rtl/LCD/WriteCtrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'WriteCtrl' (28#1) [G:/game_yjx/FcGame1.5/rtl/LCD/WriteCtrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'AddrIni' [G:/game_yjx/FcGame1.5/rtl/LCD/AddrIni.v:1]
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AddrIni' (29#1) [G:/game_yjx/FcGame1.5/rtl/LCD/AddrIni.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BlockROM16' [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM16.v:1]
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'G:/LCDfamliy/hardwareLCD/rtl/data.txt' is read successfully [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM16.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'BlockROM16' (30#1) [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM16.v:1]
+INFO: [Synth 8-6157] synthesizing module 'BlockROM1' [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM1.v:1]
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'G:/LCDfamliy/hardwareLCD/rtl/sign.txt' is read successfully [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'BlockROM1' (31#1) [G:/game_yjx/FcGame1.5/rtl/LCD/BlockROM1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_INI' (32#1) [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_INI.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LCDcrtl' [G:/game_yjx/FcGame1.5/rtl/LCD/LCDcrtl.v:23]
+WARNING: [Synth 8-3848] Net run_addr_begin in module/entity LCDcrtl does not have driver. [G:/game_yjx/FcGame1.5/rtl/LCD/LCDcrtl.v:34]
+WARNING: [Synth 8-3848] Net run_addr_end in module/entity LCDcrtl does not have driver. [G:/game_yjx/FcGame1.5/rtl/LCD/LCDcrtl.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'LCDcrtl' (33#1) [G:/game_yjx/FcGame1.5/rtl/LCD/LCDcrtl.v:23]
+WARNING: [Synth 8-7071] port 'run_addr_begin' of module 'LCDcrtl' is unconnected for instance 'LCDcrtl' [G:/game_yjx/FcGame1.5/rtl/LCD/LCDtopHARDWARE.v:116]
+WARNING: [Synth 8-7071] port 'run_addr_end' of module 'LCDcrtl' is unconnected for instance 'LCDcrtl' [G:/game_yjx/FcGame1.5/rtl/LCD/LCDtopHARDWARE.v:116]
+WARNING: [Synth 8-7023] instance 'LCDcrtl' of module 'LCDcrtl' has 14 connections declared, but only 12 given [G:/game_yjx/FcGame1.5/rtl/LCD/LCDtopHARDWARE.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'LCDtopHARDWARE' (34#1) [G:/game_yjx/FcGame1.5/rtl/LCD/LCDtopHARDWARE.v:24]
+WARNING: [Synth 8-7137] Register en_reg in module LCD_Crtl has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_Crtl.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'LCD_Crtl' (35#1) [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_Crtl.v:23]
+WARNING: [Synth 8-7071] port 'LCD_Flag' of module 'LCD_Crtl' is unconnected for instance 'LCD_Crtl' [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:451]
+WARNING: [Synth 8-7023] instance 'LCD_Crtl' of module 'LCD_Crtl' has 13 connections declared, but only 12 given [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:451]
+INFO: [Synth 8-6157] synthesizing module 'Timer' [G:/game_yjx/FcGame1.5/rtl/Timer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Timer' (36#1) [G:/game_yjx/FcGame1.5/rtl/Timer.v:23]
+WARNING: [Synth 8-3848] Net HREADYOUT_P3 in module/entity CortexM0_SoC does not have driver. [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:226]
+WARNING: [Synth 8-3848] Net HRDATA_P3 in module/entity CortexM0_SoC does not have driver. [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:227]
+WARNING: [Synth 8-3848] Net HRESP_P3 in module/entity CortexM0_SoC does not have driver. [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:228]
+INFO: [Synth 8-6155] done synthesizing module 'CortexM0_SoC' (37#1) [G:/game_yjx/FcGame1.5/rtl/CortexM0_SoC.v:2]
+WARNING: [Synth 8-7129] Port run_addr_begin[7] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_begin[6] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_begin[5] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_begin[4] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_begin[3] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_begin[2] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_begin[1] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_begin[0] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_end[7] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_end[6] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_end[5] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_end[4] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_end[3] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_end[2] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_end[1] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port run_addr_end[0] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[30] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[29] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[28] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[27] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[26] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[25] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[24] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[23] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[22] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[21] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[20] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[19] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[18] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[17] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[16] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[15] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[14] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[13] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[12] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[11] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[10] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[9] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[8] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[7] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[6] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[5] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[4] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[3] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[2] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[1] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LCD_CRTL[0] in module LCDcrtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[30] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[29] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[28] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[27] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[26] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[25] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[24] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[23] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[22] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[21] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[20] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[19] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[18] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[17] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[16] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[15] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[14] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[13] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[12] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[11] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[10] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[9] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[8] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[7] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[6] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[5] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[4] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[2] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[1] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[0] in module beat_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[30] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[29] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[28] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[27] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[26] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[25] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[24] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[23] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[22] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[21] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[20] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[19] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[18] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[17] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[16] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[15] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[14] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[13] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[12] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[11] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[10] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[9] in module addr_cnt is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mode[8] in module addr_cnt is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 1464.703 ; gain = 188.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1464.703 ; gain = 188.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1464.703 ; gain = 188.777
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 1464.703 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/game_yjx/FCgame1.1/vivado/pin.xdc]
+WARNING: [Vivado 12-507] No nets matched 'LCD_RST_OBUF'. [G:/game_yjx/FCgame1.1/vivado/pin.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [G:/game_yjx/FCgame1.1/vivado/pin.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [G:/game_yjx/FCgame1.1/vivado/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/game_yjx/FCgame1.1/vivado/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CortexM0_SoC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CortexM0_SoC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1508.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1508.941 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:55 . Memory (MB): peak = 1508.941 ; gain = 233.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:55 . Memory (MB): peak = 1508.941 ; gain = 233.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:55 . Memory (MB): peak = 1508.941 ; gain = 233.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bzmusic_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'LCDcrtl'
+WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+WARNING: [Synth 8-327] inferring latch for variable 'digitalled_reg' [G:/game_yjx/FcGame1.5/rtl/DLED_Crtl.v:109]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                             0000
+                     ADD |                               01 |                             0001
+                   DELAY |                               10 |                             0010
+                      EX |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bzmusic_ctrl'
+WARNING: [Synth 8-327] inferring latch for variable 'addr_begin_reg' [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'addr_end_reg' [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'x_position_finish_reg' [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'y_position_finish_reg' [G:/game_yjx/FcGame1.5/rtl/LCD/LCD_RUN.v:44]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                             0001
+                WAIT_INI |                           000010 |                             0010
+                     INI |                           000100 |                             0011
+               WAIT_CRTL |                           001000 |                             0100
+           CRTL_POSITION |                           010000 |                             0101
+                     RUN |                           100000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'one-hot' in module 'LCDcrtl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1508.941 ; gain = 233.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   34 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 17    
+	   2 Input   17 Bit       Adders := 5     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 9     
+	   2 Input    8 Bit       Adders := 10    
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 72    
++---Registers : 
+	               32 Bit    Registers := 7     
+	               28 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1363  
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 2     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 13    
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 1     
+	   8 Input   27 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	  22 Input   18 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 7     
+	   5 Input   16 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 2     
+	 109 Input   16 Bit        Muxes := 1     
+	 581 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   4 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	  17 Input    7 Bit        Muxes := 6     
+	   8 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   5 Input    5 Bit        Muxes := 3     
+	   8 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 8     
+	   4 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 438   
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 14    
+	  24 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP Affpw60, operation Mode is: A*B.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: Generating DSP Affpw60, operation Mode is: A*B.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: Generating DSP Affpw60, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+DSP Report: operator Affpw60 is absorbed into DSP Affpw60.
+WARNING: [Synth 8-6841] Block RAM (RAM_CODE/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+WARNING: [Synth 8-6841] Block RAM (RAM_DATA/mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+WARNING: [Synth 8-3332] Sequential element (DLED_Crtl/digitalled_reg[7]) is unused and will be removed from module CortexM0_SoC.
+WARNING: [Synth 8-3332] Sequential element (LCD_RUN/addr_end_reg[15]) is unused and will be removed from module LCDtopHARDWARE.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:51 ; elapsed = 00:06:25 . Memory (MB): peak = 1508.941 ; gain = 233.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------------------+---------------+----------------+
+|Module Name | RTL Object             | Depth x Width | Implemented As | 
++------------+------------------------+---------------+----------------+
+|BlockROM1   | mem                    | 128x1         | LUT            | 
+|LCD_RUN     | BlockROM_Data/data_reg | 32768x16      | Block RAM      | 
+|LCD_RUN     | addr_begin             | 32x17         | LUT            | 
+|LCD_RUN     | addr_end               | 32x17         | LUT            | 
++------------+------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|CortexM0_SoC | RAM_CODE/mem_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
+|CortexM0_SoC | RAM_DATA/mem_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++-------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cortexm0ds_logic | A*B            | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm0ds_logic | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cortexm0ds_logic | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:02 ; elapsed = 00:06:37 . Memory (MB): peak = 1508.941 ; gain = 233.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:04 ; elapsed = 00:06:39 . Memory (MB): peak = 1508.941 ; gain = 233.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|CortexM0_SoC | RAM_CODE/mem_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
+|CortexM0_SoC | RAM_DATA/mem_reg | 16 K x 32(READ_FIRST)  | W |   | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++-------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_CODE/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance RAM_DATA/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance LCD_Crtl/nolabel_line42/LCD_RUN/BlockROM_Data/data_reg_0_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:09 ; elapsed = 00:06:44 . Memory (MB): peak = 1647.965 ; gain = 372.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:15 ; elapsed = 00:06:50 . Memory (MB): peak = 1661.762 ; gain = 385.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:15 ; elapsed = 00:06:50 . Memory (MB): peak = 1661.762 ; gain = 385.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:15 ; elapsed = 00:06:50 . Memory (MB): peak = 1661.762 ; gain = 385.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:15 ; elapsed = 00:06:50 . Memory (MB): peak = 1661.762 ; gain = 385.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:16 ; elapsed = 00:06:51 . Memory (MB): peak = 1661.789 ; gain = 385.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:16 ; elapsed = 00:06:51 . Memory (MB): peak = 1661.789 ; gain = 385.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     4|
+|2     |CARRY4   |   300|
+|3     |DSP48E1  |     3|
+|4     |LUT1     |    85|
+|5     |LUT2     |   770|
+|6     |LUT3     |   462|
+|7     |LUT4     |   646|
+|8     |LUT5     |   982|
+|9     |LUT6     |  2607|
+|10    |MUXF7    |    70|
+|11    |MUXF8    |    13|
+|12    |RAMB36E1 |    48|
+|44    |FDCE     |   798|
+|45    |FDPE     |   106|
+|46    |FDRE     |  1045|
+|47    |FDSE     |   109|
+|48    |LD       |    54|
+|49    |LDC      |    15|
+|50    |IBUF     |     8|
+|51    |IOBUF    |     1|
+|52    |OBUF     |    53|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:16 ; elapsed = 00:06:51 . Memory (MB): peak = 1661.789 ; gain = 385.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 121 warnings.

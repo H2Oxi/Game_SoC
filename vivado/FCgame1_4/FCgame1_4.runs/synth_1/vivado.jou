@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jun  2 21:16:56 2022
+# Process ID: 14612
+# Current directory: G:/game_yjx/FcGame1.5/vivado/FCgame1_4/FCgame1_4.runs/synth_1
+# Command line: vivado.exe -log CortexM0_SoC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CortexM0_SoC.tcl
+# Log file: G:/game_yjx/FcGame1.5/vivado/FCgame1_4/FCgame1_4.runs/synth_1/CortexM0_SoC.vds
+# Journal file: G:/game_yjx/FcGame1.5/vivado/FCgame1_4/FCgame1_4.runs/synth_1\vivado.jou
+# Running On: GAODERUI, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 8387 MB
+#-----------------------------------------------------------
+source CortexM0_SoC.tcl -notrace

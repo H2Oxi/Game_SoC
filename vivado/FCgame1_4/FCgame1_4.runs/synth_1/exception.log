@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file G:\game_yjx\FcGame1.5\vivado\FCgame1_4\FCgame1_4.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限
