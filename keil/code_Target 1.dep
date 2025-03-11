@@ -1,0 +1,20 @@
+Dependencies for Project 'code', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x629B67FD)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IG:\MDKeil523\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM0\Include-IG:\MDKeil523\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCMSDK_CM0-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (code_def.h)(0x62948258)
+I (G:\MDKeil523\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (G:\MDKeil523\ARM\ARMCC\include\string.h)(0x57F606B8)
+I (role.h)(0x629B4692)
+F (.\startup_CMSDK_CM0.s)(0x62935C71)(--cpu Cortex-M0 -g --apcs=interwork -I.\RTE\_Target_1-IG:\MDKeil523\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM0\Include-IG:\MDKeil523\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 523" --pd "CMSDK_CM0 SETA 1"--list .\listings\startup_cmsdk_cm0.lst --xref -o .\startup_cmsdk_cm0.o --depend .\startup_cmsdk_cm0.d)
+F (.\code_def.c)(0x6298CCF7)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IG:\MDKeil523\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM0\Include-IG:\MDKeil523\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCMSDK_CM0-o .\code_def.o --omf_browse .\code_def.crf --depend .\code_def.d)
+I (code_def.h)(0x62948258)
+I (G:\MDKeil523\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (G:\MDKeil523\ARM\ARMCC\include\string.h)(0x57F606B8)
+F (.\code_def.h)(0x62948258)()
+F (.\keyboard.c)(0x629B69EC)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IG:\MDKeil523\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM0\Include-IG:\MDKeil523\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCMSDK_CM0-o .\keyboard.o --omf_browse .\keyboard.crf --depend .\keyboard.d)
+I (G:\MDKeil523\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (code_def.h)(0x62948258)
+I (role.h)(0x629B4692)
+F (.\role.c)(0x629B7085)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IG:\MDKeil523\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM0\Include-IG:\MDKeil523\ARM\CMSIS\Include-D__UVISION_VERSION="523" -DCMSDK_CM0-o .\role.o --omf_browse .\role.crf --depend .\role.d)
+I (code_def.h)(0x62948258)
+I (G:\MDKeil523\ARM\ARMCC\include\stdint.h)(0x57F606B8)
+I (role.h)(0x629B4692)

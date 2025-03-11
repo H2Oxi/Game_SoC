@@ -1,0 +1,10 @@
+--cpu Cortex-M0
+".\main.o"
+".\startup_cmsdk_cm0.o"
+".\code_def.o"
+".\keyboard.o"
+".\role.o"
+--strict --scatter ".\code.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\code.map" -o .\code.axf
